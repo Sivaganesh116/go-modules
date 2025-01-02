@@ -1,5 +1,9 @@
 package LinkedList
 
+import (
+	"fmt"
+)
+
 type Node struct {
 	Next *Node
 	Val int
