@@ -1,17 +1,17 @@
 package LinkedList
 
 type Node struct {
-	next *Node
-	val int
+	Next *Node
+	Val int
 }
 
-func (curNode *Node) insert (node *Node) {
-	curNode.next = node
+func (curNode *Node) Insert (node *Node) {
+	curNode.Next = node
 }
 
-func (root *Node) print () {
+func (root *Node) Print () {
 	for root != nil {
-		fmt.Printf("%v ", root.val)
-		root = root.next
+		fmt.Printf("%v ", root.Val)
+		root = root.Next
 	}
 }
